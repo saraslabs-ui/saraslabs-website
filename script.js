@@ -6,26 +6,45 @@ menuBtn.addEventListener("click", () => {
 });
 
 document.querySelectorAll(".nav a").forEach((link) => {
-  link.addEventListener("click", () => nav.classList.remove("open"));
+  link.addEventListener("click", () => {
+    nav.classList.remove("open");
+  });
 });
 
 document.getElementById("year").textContent = new Date().getFullYear();
 
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach((entry) => {
-    if (entry.isIntersecting) entry.target.classList.add("visible");
-  });
-}, { threshold: 0.14 });
+/* Hero Screenshot Slider */
 
-document.querySelectorAll(".reveal").forEach((el) => observer.observe(el));
+const sliderImages = [
+  "assets/screenshots/dashboard.png",
+  "assets/screenshots/sales-entry.png",
+  "assets/screenshots/purchase-entry.png",
+  "assets/screenshots/reports.png",
+  "assets/screenshots/inventory.png"
+];
+
+const heroSlider = document.getElementById("heroSlider");
+let currentSlide = 0;
+
+setInterval(() => {
+  currentSlide = (currentSlide + 1) % sliderImages.length;
+  heroSlider.style.opacity = "0";
+
+  setTimeout(() => {
+    heroSlider.src = sliderImages[currentSlide];
+    heroSlider.style.opacity = "1";
+  }, 250);
+}, 3000);
+
+/* Screenshot Lightbox */
 
 const lightbox = document.getElementById("lightbox");
 const lightboxImg = document.getElementById("lightboxImg");
 const closeLightbox = document.getElementById("closeLightbox");
 
-document.querySelectorAll(".shot-card").forEach((card) => {
-  card.addEventListener("click", () => {
-    lightboxImg.src = card.dataset.img;
+document.querySelectorAll(".gallery article").forEach((item) => {
+  item.addEventListener("click", () => {
+    lightboxImg.src = item.dataset.img;
     lightbox.classList.add("open");
   });
 });
