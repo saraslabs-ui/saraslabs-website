@@ -3,212 +3,92 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
   <title>SARASLabs | SARAS ERP Legacy & NextGen</title>
-  <meta name="description" content="SARASLabs builds SARAS ERP Legacy, SARAS ERP NextGen and business software products for billing, inventory, GST reports and automation." />
-  <meta name="theme-color" content="#06130c" />
-
+  <meta name="description" content="SARASLabs builds SARAS ERP Legacy, SARAS ERP NextGen and modern business software for billing, inventory, GST reports and automation." />
+  <meta name="theme-color" content="#020617" />
   <link rel="icon" href="assets/saraslabs-logo.png" type="image/png" />
   <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
+  <div class="page-glow glow-one"></div><div class="page-glow glow-two"></div><div class="grid-bg"></div>
+
   <header class="site-header">
-    <a href="#home" class="brand">
-      <img src="assets/saraslabs-logo.png" alt="SARASLabs Logo" />
-      <span>
-        <b>SARASLabs</b>
-        <small>Code • Create • Innovate</small>
-      </span>
-    </a>
-
+    <a href="#home" class="brand"><img src="assets/saraslabs-logo.png" alt="SARASLabs Logo" /><span><b>SARASLabs</b><small>Code • Create • Innovate</small></span></a>
     <nav class="nav" id="nav">
-      <a href="#products">Products</a>
-      <a href="#download">Download</a>
-      <a href="#install">Install</a>
-      <a href="#screenshots">Screenshots</a>
-      <a href="#contact">Contact</a>
+      <a href="#products">Products</a><a href="#download">Download</a><a href="#install">Install</a><a href="#screenshots">Screenshots</a><a href="#contact">Contact</a>
     </nav>
-
     <button class="menu-btn" id="menuBtn">☰</button>
   </header>
 
   <main>
     <section class="hero" id="home">
-      <div class="hero-content">
-        <span class="badge">Official SARASLabs Product</span>
-        <h1>SARAS ERP Legacy</h1>
-        <p class="hero-sub">
-          Fast, secure and offline-ready ERP software for medical, pharmacy and business billing.
-          Manage sales, purchase, inventory, GST reports, parties, payments, stock and backup in one place.
-        </p>
-
-        <div class="hero-tags">
-          <span>GST Billing</span>
-          <span>Inventory</span>
-          <span>Reports</span>
-          <span>Backup</span>
-        </div>
-
+      <div class="hero-copy reveal">
+        <span class="eyebrow">Official SARASLabs Product</span>
+        <h1>Powerful ERP software for modern businesses.</h1>
+        <p>SARAS ERP Legacy helps medical, pharmacy and business users manage sales, purchase, inventory, GST reports, payments, stock and backup in one clean desktop software.</p>
+        <div class="hero-badges"><span>GST Billing</span><span>Inventory</span><span>MySQL 8.0</span><span>Windows 64-bit</span></div>
         <div class="hero-actions">
-          <a class="btn primary" href="https://github.com/saraslabs-ui/saraslabs-website/releases/download/v2.0.0/SARAS_ERP_Setup_v1_x64.exe">
-            Download for Windows
-          </a>
-          <a class="btn secondary" href="#screenshots">View Screenshots</a>
+          <a class="btn primary" href="https://github.com/saraslabs-ui/saraslabs-website/releases/download/v2.0.0/SARAS_ERP_Setup_v1_x64.exe">Download for Windows</a>
+          <a class="btn ghost" href="#screenshots">View Screenshots</a>
         </div>
-
-        <div class="quick-info">
-          <div><b>v2.0.0</b><span>Latest Version</span></div>
-          <div><b>Windows</b><span>10 / 11 64-bit</span></div>
-          <div><b>MySQL 8.0</b><span>Required</span></div>
-        </div>
+        <div class="stats-row"><div><b>v2.0.0</b><span>Latest Release</span></div><div><b>Offline</b><span>Desktop ERP</span></div><div><b>₹3000/yr</b><span>Subscription</span></div></div>
       </div>
-
-      <div class="hero-preview">
-        <div class="preview-window">
-          <div class="window-dots"><i></i><i></i><i></i></div>
-          <img id="heroSlider" src="assets/screenshots/dashboard.png" alt="SARAS ERP Screenshot" />
+      <div class="hero-preview reveal">
+        <div class="mockup">
+          <div class="mockup-top"><i></i><i></i><i></i><span>SARAS ERP Live Preview</span></div>
+          <img id="heroSlider" src="assets/screenshots/dashboard.png" alt="SARAS ERP dashboard preview" />
         </div>
       </div>
     </section>
 
     <section class="section" id="products">
-      <div class="section-head">
-        <span class="badge">Products</span>
-        <h2>SARASLabs Software Ecosystem</h2>
-        <p>Legacy available now. NextGen and other products are part of the SARASLabs roadmap.</p>
-      </div>
-
-      <div class="cards two">
-        <article class="card featured">
-          <span class="card-icon">🧾</span>
-          <h3>SARAS ERP Legacy</h3>
-          <p>Current stable desktop ERP with billing, purchase, stock, reports, backup, migration and license system.</p>
-          <ul>
-            <li>Available now</li>
-            <li>MySQL 8.0 required</li>
-            <li>Windows desktop setup</li>
-          </ul>
-        </article>
-
-        <article class="card featured">
-          <span class="card-icon">🚀</span>
-          <h3>SARAS ERP NextGen</h3>
-          <p>Upcoming modern ERP with React, TypeScript, Tailwind, FastAPI and SQLite database.</p>
-          <ul>
-            <li>In development</li>
-            <li>No MySQL required</li>
-            <li>Offline-first + cloud-ready roadmap</li>
-          </ul>
-        </article>
-      </div>
-
-      <div class="cards small">
-        <article class="card"><h3>SARAS Inventory</h3><p>Stock, batch, expiry and barcode management.</p><small>Coming Soon</small></article>
-        <article class="card"><h3>SARAS CRM</h3><p>Leads, follow-ups and customer management.</p><small>Coming Soon</small></article>
-        <article class="card"><h3>School ERP</h3><p>Fees, attendance, exams and students.</p><small>Roadmap</small></article>
-        <article class="card"><h3>Hospital ERP</h3><p>Patients, billing and pharmacy workflow.</p><small>Roadmap</small></article>
+      <div class="section-head reveal"><span class="eyebrow">Product Ecosystem</span><h2>Legacy available now. NextGen is the future.</h2><p>SARASLabs is being built as a serious multi-product software company.</p></div>
+      <div class="product-grid">
+        <article class="product-card main-card reveal"><span class="icon">🧾</span><h3>SARAS ERP Legacy</h3><p>Stable Windows desktop ERP with sales, purchase, stock, GST reports, data migration, backup and license system.</p><ul><li>Available now</li><li>MySQL 8.0 required</li><li>Windows 10/11 64-bit</li></ul></article>
+        <article class="product-card main-card reveal"><span class="icon">🚀</span><h3>SARAS ERP NextGen</h3><p>Upcoming React + FastAPI + SQLite ERP with modern UI, faster workflow, JSON reports and future cloud sync.</p><ul><li>In development</li><li>No MySQL required</li><li>Offline-first roadmap</li></ul></article>
+        <article class="product-card reveal"><span class="icon">📦</span><h3>SARAS Inventory</h3><p>Stock, batches, barcode, expiry and inventory reports.</p><small>Coming Soon</small></article>
+        <article class="product-card reveal"><span class="icon">🤝</span><h3>SARAS CRM</h3><p>Leads, follow-ups, customer history and reminders.</p><small>Coming Soon</small></article>
+        <article class="product-card reveal"><span class="icon">🏫</span><h3>School ERP</h3><p>Fees, attendance, exams and student records.</p><small>Roadmap</small></article>
+        <article class="product-card reveal"><span class="icon">🏥</span><h3>Hospital ERP</h3><p>Patients, pharmacy, appointments and billing.</p><small>Roadmap</small></article>
       </div>
     </section>
 
-    <section class="section download-section" id="download">
-      <div class="download-box">
-        <div>
-          <span class="badge">Download Center</span>
-          <h2>Download SARAS ERP Legacy</h2>
-          <p>Official Windows setup file hosted on GitHub Releases.</p>
-
-          <div class="download-meta">
-            <span>Version: v2.0.0</span>
-            <span>Platform: Windows 10/11 64-bit</span>
-            <span>Database: MySQL 8.0</span>
-            <span>License: Yearly Subscription</span>
-          </div>
-        </div>
-
-        <a class="btn primary big" href="https://github.com/saraslabs-ui/saraslabs-website/releases/download/v2.0.0/SARAS_ERP_Setup_v1_x64.exe">
-          Download Setup
-        </a>
-      </div>
-    </section>
+    <section class="section" id="download"><div class="download-panel reveal"><div><span class="eyebrow">Download Center</span><h2>Download SARAS ERP Legacy</h2><p>Official Windows setup file hosted on GitHub Releases.</p><div class="download-meta"><span>Version: v2.0.0</span><span>Platform: Windows 10/11 64-bit</span><span>Database: MySQL 8.0</span><span>License: Yearly Subscription</span></div></div><a class="btn primary big" href="https://github.com/saraslabs-ui/saraslabs-website/releases/download/v2.0.0/SARAS_ERP_Setup_v1_x64.exe">Download Setup</a></div></section>
 
     <section class="section" id="install">
-      <div class="section-head">
-        <span class="badge">Installation Guide</span>
-        <h2>Install SARAS ERP Legacy step by step</h2>
-        <p>Legacy edition requires MySQL 8.0. Database name must be exactly <b>medical_erp</b>.</p>
-      </div>
-
-      <div class="steps">
-        <article><b>01</b><h3>Download ERP Setup</h3><p>Download SARAS ERP Legacy setup from this website.</p></article>
-        <article><b>02</b><h3>Install ERP</h3><p>Run setup file and complete installation.</p></article>
-        <article><b>03</b><h3>Download MySQL 8.0</h3><p>Install MySQL Server 8.0 from Oracle official website.</p><a href="https://dev.mysql.com/downloads/mysql/" target="_blank">Download MySQL</a></article>
-        <article><b>04</b><h3>Set Password</h3><p>During MySQL installation set root password as:</p><code>root</code></article>
-        <article><b>05</b><h3>Create Database</h3><p>Open MySQL Workbench and run:</p><code>CREATE DATABASE medical_erp;</code></article>
-        <article><b>06</b><h3>Start ERP</h3><p>Open SARAS ERP Legacy and connect to database:</p><code>medical_erp</code></article>
+      <div class="section-head reveal"><span class="eyebrow">Installation Guide</span><h2>Install SARAS ERP Legacy step by step.</h2><p>Legacy edition requires MySQL 8.0. Database name must be exactly <b>medical_erp</b>.</p></div>
+      <div class="timeline">
+        <article class="step reveal"><b>01</b><h3>Download ERP Setup</h3><p>Download SARAS ERP Legacy setup from this website.</p></article>
+        <article class="step reveal"><b>02</b><h3>Install ERP</h3><p>Run the setup file and complete the installation wizard.</p></article>
+        <article class="step reveal"><b>03</b><h3>Download MySQL 8.0</h3><p>Install MySQL Server 8.0 from Oracle official website.</p><a href="https://dev.mysql.com/downloads/mysql/" target="_blank" rel="noopener">Download MySQL 8.0</a></article>
+        <article class="step reveal"><b>04</b><h3>Set Root Password</h3><p>During MySQL installation set root password as:</p><code>root</code></article>
+        <article class="step reveal"><b>05</b><h3>Create Database</h3><p>Open MySQL Workbench and run:</p><code>CREATE DATABASE medical_erp;</code></article>
+        <article class="step reveal"><b>06</b><h3>Start ERP</h3><p>Open SARAS ERP Legacy and connect with database:</p><code>medical_erp</code></article>
       </div>
     </section>
 
-    <section class="section compare">
-      <div class="section-head">
-        <span class="badge">Comparison</span>
-        <h2>Legacy vs NextGen</h2>
-      </div>
-
-      <div class="table">
-        <div class="tr head"><span>Feature</span><span>Legacy</span><span>NextGen</span></div>
-        <div class="tr"><span>Status</span><span>Available</span><span>In Development</span></div>
-        <div class="tr"><span>Database</span><span>MySQL 8.0</span><span>SQLite</span></div>
-        <div class="tr"><span>Setup</span><span>Manual DB setup</span><span>Automatic DB planned</span></div>
-        <div class="tr"><span>Offline</span><span>Yes</span><span>Yes</span></div>
-        <div class="tr"><span>Cloud Ready</span><span>No</span><span>Planned</span></div>
-      </div>
-    </section>
+    <section class="section compare"><div class="section-head reveal"><span class="eyebrow">Comparison</span><h2>Legacy vs NextGen</h2></div><div class="compare-table reveal"><div class="row head"><span>Feature</span><span>Legacy</span><span>NextGen</span></div><div class="row"><span>Status</span><span>Available</span><span>In Development</span></div><div class="row"><span>Database</span><span>MySQL 8.0</span><span>SQLite</span></div><div class="row"><span>Setup</span><span>Manual DB setup</span><span>Automatic DB planned</span></div><div class="row"><span>Offline</span><span>Yes</span><span>Yes</span></div><div class="row"><span>Cloud Ready</span><span>No</span><span>Planned</span></div></div></section>
 
     <section class="section" id="screenshots">
-      <div class="section-head">
-        <span class="badge">Screenshots</span>
-        <h2>SARAS ERP Legacy Preview</h2>
-        <p>Clean product screenshots for customers to understand the software before download.</p>
-      </div>
-
+      <div class="section-head reveal"><span class="eyebrow">Screenshots</span><h2>SARAS ERP Legacy Preview</h2><p>Click any screenshot to open full-size preview.</p></div>
       <div class="gallery">
-        <article data-img="assets/screenshots/login.png"><img src="assets/screenshots/login.png"><h3>Login Screen</h3></article>
-        <article data-img="assets/screenshots/dashboard.png"><img src="assets/screenshots/dashboard.png"><h3>Dashboard</h3></article>
-        <article data-img="assets/screenshots/sales-entry.png"><img src="assets/screenshots/sales-entry.png"><h3>Sales Entry</h3></article>
-        <article data-img="assets/screenshots/estimate-entry.png"><img src="assets/screenshots/estimate-entry.png"><h3>Estimate Entry</h3></article>
-        <article data-img="assets/screenshots/purchase-entry.png"><img src="assets/screenshots/purchase-entry.png"><h3>Purchase Entry</h3></article>
-        <article data-img="assets/screenshots/inventory.png"><img src="assets/screenshots/inventory.png"><h3>Inventory</h3></article>
-        <article data-img="assets/screenshots/product-master.png"><img src="assets/screenshots/product-master.png"><h3>Product Master</h3></article>
-        <article data-img="assets/screenshots/reports.png"><img src="assets/screenshots/reports.png"><h3>GST Reports</h3></article>
-        <article data-img="assets/screenshots/data-migration-wizard.png"><img src="assets/screenshots/data-migration-wizard.png"><h3>Data Migration</h3></article>
-        <article data-img="assets/screenshots/settings.png"><img src="assets/screenshots/settings.png"><h3>Settings</h3></article>
+        <article class="shot reveal" data-img="assets/screenshots/login.png"><img src="assets/screenshots/login.png" alt="Login Screen"><h3>Login Screen</h3></article>
+        <article class="shot reveal" data-img="assets/screenshots/dashboard.png"><img src="assets/screenshots/dashboard.png" alt="Dashboard"><h3>Dashboard</h3></article>
+        <article class="shot reveal" data-img="assets/screenshots/sales-entry.png"><img src="assets/screenshots/sales-entry.png" alt="Sales Entry"><h3>Sales Entry</h3></article>
+        <article class="shot reveal" data-img="assets/screenshots/purchase-entry.png"><img src="assets/screenshots/purchase-entry.png" alt="Purchase Entry"><h3>Purchase Entry</h3></article>
+        <article class="shot reveal" data-img="assets/screenshots/inventory.png"><img src="assets/screenshots/inventory.png" alt="Inventory"><h3>Inventory</h3></article>
+        <article class="shot reveal" data-img="assets/screenshots/product-master.png"><img src="assets/screenshots/product-master.png" alt="Product Master"><h3>Product Master</h3></article>
+        <article class="shot reveal" data-img="assets/screenshots/reports.png"><img src="assets/screenshots/reports.png" alt="Reports"><h3>GST Reports</h3></article>
+        <article class="shot reveal" data-img="assets/screenshots/data-migration-wizard.png"><img src="assets/screenshots/data-migration-wizard.png" alt="Data Migration Wizard"><h3>Data Migration</h3></article>
       </div>
     </section>
 
-    <section class="section contact" id="contact">
-      <div class="contact-box">
-        <span class="badge">Contact</span>
-        <h2>Need demo, setup access or support?</h2>
-        <a href="mailto:contact.saraslabs@zohomail.in">contact.saraslabs@zohomail.in</a>
-        <p>Website: https://saraslabs.in</p>
-      </div>
-    </section>
+    <section class="section contact" id="contact"><div class="contact-box reveal"><span class="eyebrow">Contact</span><h2>Need demo, setup access or support?</h2><a href="mailto:contact.saraslabs@zohomail.in">contact.saraslabs@zohomail.in</a><p>Website: https://saraslabs.in</p></div></section>
   </main>
 
-  <div class="lightbox" id="lightbox">
-    <button id="closeLightbox">×</button>
-    <img id="lightboxImg" src="" alt="Screenshot Preview">
-  </div>
+  <div class="lightbox" id="lightbox"><button id="closeLightbox">×</button><img id="lightboxImg" src="" alt="Screenshot Preview"></div>
 
-  <footer>
-    <div class="footer-brand">
-      <img src="assets/saraslabs-logo.png" alt="SARASLabs Logo" />
-      <b>SARASLabs</b>
-    </div>
-    <span>© <span id="year"></span> SARASLabs. All rights reserved.</span>
-  </footer>
-
+  <footer><div class="footer-brand"><img src="assets/saraslabs-logo.png" alt="SARASLabs Logo" /><b>SARASLabs</b></div><span>© <span id="year"></span> SARASLabs. All rights reserved.</span></footer>
   <script src="script.js"></script>
 </body>
 </html>
