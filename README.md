@@ -1,37 +1,31 @@
-# SARASLabs GenZ Website V2
+# SARASLabs Website — Clean ERP-Focused Version
 
-A complete redesign of saraslabs.in with:
+This package removes Saras Poll from saraslabs.in and keeps the GenZ visual identity.
 
-- GenZ-inspired visual language
-- Modern dark interface with neon lime, purple and pink accents
-- Featured Saras Poll product card
-- Live Saras Poll link: https://npspoll.vercel.app/
-- SARAS ERP Legacy and NextGen product sections
-- Animated hero product mockups
-- Interactive screenshot showcase with 19 real ERP screens
-- Roadmap, manifesto, download and contact sections
-- Responsive desktop and mobile layout
-- Preserved custom domain through CNAME
-- Preserved ERP GitHub Release download link
+## Removed
+- Saras Poll launch banner
+- Saras Poll hero CTA and floating card
+- Saras Poll product card
+- Saras Poll roadmap entry
+- Saras Poll contact link
+- GitHub contact link
+- Saras Poll SEO references
 
-## Deployment
+## Added / Updated
+- ERP-focused hero
+- SARAS AI research card
+- SARAS AI product card
+- Balanced product grid
+- Business-focused contact links
+- Updated roadmap numbering
+- Existing CNAME preserved: saraslabs.in
+- Existing ERP download link preserved
 
-Replace the existing repository files with the contents of this folder, keeping the same repository.
-
-Then run:
+## Deploy
+Replace the existing website repository files with this package, then run:
 
 ```powershell
 git add .
-git commit -m "feat: launch SARASLabs GenZ website v2 with Saras Poll"
+git commit -m "chore: remove Saras Poll and refocus SARASLabs website"
 git push origin main
 ```
-
-GitHub Pages will redeploy automatically. The `CNAME` file remains set to:
-
-```text
-saraslabs.in
-```
-
-## Important
-
-The website imports Google Fonts. If fonts fail to load, the design automatically falls back to local system fonts.
